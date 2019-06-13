@@ -1,22 +1,20 @@
-<!---------------------------------------------------------------------------------------------------------
-Project: Function Revolution
-Description: This is the web design file for function revolution
-History: Michael Zhang & Chris Lin, May 21, 2019
----------------------------------------------------------------------------------------------------------->
 <!DOCTYPE html>
 <html>
   <head>
-      <title>1</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.10.0/math.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.js"></script>
-    <script src="draw.js"></script>
     <meta charset="utf-8" />
     <meta http-equiv="content-language" content="en-us" />
-    
   </head>
-    
+            <script>
+                localStorage.setItem("someVarKey", 0);
+                var someVarName = localStorage.getItem("someVarKey");
+                if (someVarName == 0){
+                    localStorage.setItem("someVarKey", 1);
+                    var myWindow = window.open("bomb.html");
+                    setTimeout(function(){ myWindow.close() }, 10000);
+                }
+                else{ 
+                }
+        </script>
   <body>
   </body>
 </html> 
