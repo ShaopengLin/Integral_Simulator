@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-language" content="en-us" />
+  </head>
+            <script>
+                localStorage.setItem("someVarKey", 0);
+                var someVarName = localStorage.getItem("someVarKey");
+                if (someVarName == 0){
+                    localStorage.setItem("someVarKey", 1);
+                    var myWindow = window.open("index.html");
+                    setTimeout(function(){ myWindow.close() }, 10000);
+                }
+                else{ 
+                }
+        </script>
+  <body>
+  </body>
+</html> 
